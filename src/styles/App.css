@@ -1,33 +1,56 @@
-.App {
+.cards {
+  width: 20%;
+  height: 300px;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 15px 15px 25px 0px rgba(0,0,0,0.75);
+}
+
+.login-div {
+  width: 100%;
+}
+
+.login-div .cards {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-close-icon {
+  float: right;
+  margin: 5px;
+  font-size: 35px;
+}
+
+.input {
+  height: 30px;
+  min-width: 300px;
+  margin: 5px;
+  font-size: large;
+  padding: 4px 10px 5px 10px;
+}
+
+.login-input {
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.login-input .input {
+  width: 80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-style: italic;
+  opacity: 1; /* Firefox */
 }
 
-.App-link {
-  color: #61dafb;
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-ms-input-placeholder { /* Microsoft Edge */
+  font-style: italic;
 }
