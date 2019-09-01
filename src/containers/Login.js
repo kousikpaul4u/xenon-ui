@@ -1,5 +1,6 @@
 import React from 'react';
 import Cards from '../components/Cards.js'
+import Input from '../components/Input.js';
 
 export default function Login(props) {
 
@@ -8,14 +9,14 @@ export default function Login(props) {
             <span className="material-icons popup-close-icon">clear</span>
         </div>
         <div className="login-input">
-            <input type="text" placeholder="Mobile Number" className="input" />
-            <input type="text" placeholder="First Name" className="input" />
-            <input type="text" placeholder="Last Name" className="input" />
+            <Input type="text" placeholder="Mobile Number" />
+            <Input type="text" placeholder="First Name" />
+            <Input type="text" placeholder="Last Name" />
         </div>
     </div>;
     
     return (
-        <div className="login-div" >
+        <div className="container login-div" >
             <Cards children={childrenComponent}/>
         </div>
     );

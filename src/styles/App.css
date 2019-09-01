@@ -3,7 +3,9 @@
   height: 300px;
   padding: 5px;
   margin: 5px;
-  box-shadow: 15px 15px 25px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.52);
+  border-radius: 10px;
+  float: left;
 }
 
 .login-div {
@@ -23,6 +25,7 @@
   float: right;
   margin: 5px;
   font-size: 35px;
+  color: #6c6c6c;
 }
 
 .input {
@@ -53,4 +56,61 @@
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   font-style: italic;
+}
+
+.main-container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.profile-image {
+  float: right;
+  width: 50px;
+  height: 50px;
+  box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.52);
+  border-radius: 50%;
+  border-width: 0.5px;
+  background-color: coral;
+  margin-top: -1px;
+}
+
+.music-player-card {
+  width: 99.2% !important;
+  height: 60px !important;
+  display: inline-block !important;
+  z-index: 2000;
+}
+
+.music-player-icons {
+  margin-top: 4px;
+  margin-left: 5px;
+  font-size: 40px !important;
+}
+
+.album-art {
+  width: 52px;
+  height: 52px;
+  float: left;
+  margin-top: -2px;
+  margin-left: -2px;
+  background-color: coral;
+  box-shadow: 5px 5px 5px -8px rgba(0, 0, 0, 0.52);
+  border-radius: 2px;
+}
+
+.app-logo {
+  float: right;
+  margin: 3px 12px 0px 0px;
+  font-size: 27px;
+  font-style: initial;
+  font-variant: all-small-caps;
+}
+
+.search-box {
+  float: right;
+}
+
+.album-grid-container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
